@@ -1,0 +1,29 @@
+# Core ML stack — requires TF < 2.16 for legacy Keras 2 API compatibility
+# (ImageDataGenerator, keras.preprocessing, etc. are removed in TF 2.16 / Keras 3)
+tensorflow>=2.11,<2.16
+numpy<2.0
+
+# Data handling and visualization
+pandas>=1.5
+matplotlib>=3.6
+seaborn>=0.12
+
+# ML utilities
+scikit-learn>=1.2
+
+# Image augmentation
+# Note: imgaug is unmaintained since 2021 and requires numpy < 2.
+# albumentations is a maintained alternative if you need to upgrade.
+imgaug>=0.4
+
+# Explainability
+lime>=0.2
+
+# Utilities
+tqdm>=4.64
+opencv-python>=4.7
+Pillow>=9.4
+
+# Notebook environment
+ipykernel>=6.0
+jupyterlab>=3.0
